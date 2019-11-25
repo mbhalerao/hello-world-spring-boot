@@ -1,4 +1,11 @@
 #!/usr/bin/env groovy
+
 node {
-echo 'Hello World Springboot Application'
-}
+        stage 'Checkout'
+            checkout scm
+
+        stage 'Build'
+            sh 'mvn -DskipTests clean install'
+
+
+     }
