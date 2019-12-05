@@ -5,7 +5,8 @@ node {
             checkout scm
 
         stage 'Build'
-            sh 'mvn -DskipTests clean install'
+            sh 'mvn -version' 
+            #sh 'mvn -DskipTests clean install'
 
 
      }
