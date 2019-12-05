@@ -6,7 +6,7 @@ node {
 
         stage 'Build'
             sh 'mvn -version' 
-            #sh 'mvn -DskipTests clean install'
+            
 
 
      }
